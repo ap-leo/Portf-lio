@@ -66,7 +66,7 @@ h1{
 }
 
 .trd h1 {
-  font-size: 8em;
+  font-size: 6vw;
   font-weight: 600;
 }
 
@@ -97,7 +97,6 @@ h1{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .foto:nth-of-type(1){
@@ -196,7 +195,7 @@ li a:hover {
 }
 
 .nomeEu {
-  font-size: 2em;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -218,10 +217,10 @@ li a:hover {
 }
 
 .sobremim {
-  width: 90%;
+  width: 80%;
   color: #FFF;
   text-align: justify;
-  font-size: 1.5em;
+  font-size: 2.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -239,7 +238,7 @@ li a:hover {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
     grid-template-rows: repeat(6, auto);   /* 6 linhas ajustadas ao conteúdo */
     gap: 100px; /* Espaçamento entre os cards */
-    width: 50%;
+    width: 60%;
     height: 100%;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
     grid-template-rows: repeat(6, auto); /* 6 linhas com altura automática */
@@ -251,7 +250,7 @@ li a:hover {
   align-items: center;
   justify-content: center;
   background-color: white;
-  min-width: 300px;
+  min-width: 100px;
   min-height: 300px;
   border-radius: 33px;
   transition: filter 0.3s ease;
@@ -287,37 +286,29 @@ li a:hover {
   opacity: 0;
 }
 
-.card:nth-of-type(1){
-  background-image: url('imgs/insta.png');
-  background-size: cover;
-  background-position: center;
-}
-.card:nth-of-type(2){
-  background-image: url('imgs/pitchd.png');
-  background-size: cover;
-  background-position: center;
-}
-.card:nth-of-type(4){
-  background-image: url('imgs/pitchdd.png');
-  background-size: cover;
-  background-position: center;
-}
-.card:nth-of-type(3){
-  background-image: url('imgs/labmeta.png');
-  background-size: cover;
-  background-position: center;
-}
-.card:nth-of-type(5){
-  background-image: url('imgs/labgem.png');
-  background-size: cover;
-  background-position: center;
-}
-.card:nth-of-type(6){
-  background-image: url('imgs/primavera.png');
+.card{
   background-size: cover;
   background-position: center;
 }
 
+.card:nth-of-type(1){
+  background-image: url('imgs/insta.png');
+}
+.card:nth-of-type(2){
+  background-image: url('imgs/pitchd.png');
+}
+.card:nth-of-type(4){
+  background-image: url('imgs/pitchdd.png');
+}
+.card:nth-of-type(3){
+  background-image: url('imgs/labmeta.png');
+}
+.card:nth-of-type(5){
+  background-image: url('imgs/labgem.png');
+}
+.card:nth-of-type(6){
+  background-image: url('imgs/primavera.png');
+}
 
 
 .redes{
