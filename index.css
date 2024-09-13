@@ -8,6 +8,7 @@ body {
   margin: 0;
   background: linear-gradient(129deg, #68B2F8 18.66%, #6D5FDB 42.21%, #7037CD 61.46%, #651F71 80.87%);
   scroll-behavior: smooth !important;
+  overflow-x: hidden;
 
 }
 
@@ -349,10 +350,10 @@ li a:hover {
 }
 
 .fft {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
+  background-color: transparent;
   background-image: none;
 }
 
@@ -388,7 +389,7 @@ li a:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background: var(--roxy, linear-gradient(117deg, #68B2F8 0%, #7037CD 50%, #651F71 100%));
+  background:white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -401,6 +402,12 @@ li a:hover {
 
 #inicio {
   cursor: pointer;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
 }
 
 @media only screen and (max-width: 750px) {
