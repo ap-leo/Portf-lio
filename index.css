@@ -103,34 +103,34 @@ h1{
 .foto:nth-of-type(1){
   width: 100%;
   height: 20%;
-  background-image: url(/imgs/leo.png);
+  background-image: url(imgs/leo.png);
 }
 .foto:nth-of-type(2){
   width: 100%;
   height: 20%;
-  background-image: url(/imgs/kamaleo.jpeg);
+  background-image: url(imgs/kamaleo.jpeg);
 }
 
 .foto:nth-of-type(3){
   width: 100%;
   height: 20%;
-  background-image: url(/imgs/apts.jpeg);
+  background-image: url(imgs/apts.jpeg);
 }
 
 .foto:nth-of-type(4){
   width: 100%;
   height: 20%;
-  background-image: url(/imgs/sandy.jpeg);
+  background-image: url(imgs/sandy.jpeg);
 }
 .foto:nth-of-type(5){
   width: 100%;
   height: 20%;
-  background-image: url(/imgs/eg.jpeg);
+  background-image: url(imgs/eg.jpeg);
 }
 .foto:nth-of-type(5){
   width: 100%;
   height: 20%;
-  background-image: url(/imgs/sofi.jfif);
+  background-image: url(imgs/sofi.jfif);
 }
 
 
@@ -202,16 +202,6 @@ li a:hover {
   line-height: normal;
   text-align: end;
   width: 100%;
-}
-
-.imagem {
-  background-image: url(/imgs/eu.png);
-  background-size: cover;
-  width: 25%;
-  height: 100%;
-  border-radius: 50px;
-  border: 4px solid #68B2F8;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .middle {
