@@ -2,33 +2,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  background: linear-gradient(129deg, #68B2F8 18.66%, #6D5FDB 42.21%, #7037CD 61.46%, #651F71 80.87%);
+ scroll-behavior:smooth !important;
 
-  * {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-  }
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 .second,
 .trd,
 .frt,
 .fft {
-  display: none;
+  
+  display: flex;
   flex-direction: column;
-  background: var(--roxy, linear-gradient(117deg, #68B2F8 0%, #7037CD 50%, #651F71 100%));
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
-
   padding: 5%;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   box-sizing: border-box;
   align-items: start;
   justify-content: space-between;
+  flex-direction: column;
+}
+
+.trd{
+  flex-direction: row;
+  justify-content: center;
+  height: 200vh;
+}
+.auxiliar{
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  position:sticky;
+  top: 0;
   flex-direction: column;
 }
 
@@ -42,30 +58,93 @@ body {
   align-items: center;
 }
 
-h1 {
+h1{
   font-family: 'Urbanist';
   font-size: 3em;
   font-weight: 800;
   margin: 0;
 }
 
-.fisrt {
-  padding: 2%;
+.trd h1 {
+  font-size: 8em;
+  font-weight: 600;
+}
+
+.first, .second {
   width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  background: black;
+  height: 200vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+
+
+.fotos{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  padding: 2%;
+  box-sizing: border-box;
+  justify-content: space-between;
   flex-direction: column;
+  gap: 20px;
+  width: 20%;
+  height: 100%;
 }
+
+.foto{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.foto:nth-of-type(1){
+  width: 100%;
+  height: 20%;
+  background-image: url(/imgs/leo.png);
+}
+.foto:nth-of-type(2){
+  width: 100%;
+  height: 20%;
+  background-image: url(/imgs/kamaleo.jpeg);
+}
+
+.foto:nth-of-type(3){
+  width: 100%;
+  height: 20%;
+  background-image: url(/imgs/apts.jpeg);
+}
+
+.foto:nth-of-type(4){
+  width: 100%;
+  height: 20%;
+  background-image: url(/imgs/sandy.jpeg);
+}
+.foto:nth-of-type(5){
+  width: 100%;
+  height: 20%;
+  background-image: url(/imgs/eg.jpeg);
+}
+.foto:nth-of-type(5){
+  width: 100%;
+  height: 20%;
+  background-image: url(/imgs/sofi.jfif);
+}
+
+
+
 
 .nome {
   display: flex;
   flex-direction: column;
+  background: black;
   width: 80%;
-  height: 100%;
+  border-bottom-right-radius: 33px;
+  height: 50%;
+  position: sticky;
+  top: 0;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -92,10 +171,11 @@ h1 {
   padding: 0;
 }
 
-li {
+li a{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .botoesMain li {
@@ -104,7 +184,7 @@ li {
   cursor: pointer;
 }
 
-li:hover {
+li a:hover {
   text-decoration: underline;
 }
 
@@ -140,13 +220,15 @@ li:hover {
   padding: 2%;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 50%;
   align-items: center;
+  position: sticky;
+  top: 0;
   justify-content: space-around;
 }
 
 .sobremim {
-  width: 50%;
+  width: 90%;
   color: #FFF;
   text-align: justify;
   font-size: 1.5em;
@@ -163,12 +245,15 @@ li:hover {
   transform: scale(1.2);
 }
 .cards {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-  overflow-x: auto;
-  gap: 2vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+    grid-template-rows: repeat(6, auto);   /* 6 linhas ajustadas ao conteúdo */
+    gap: 100px; /* Espaçamento entre os cards */
+    width: 50%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+    grid-template-rows: repeat(6, auto); /* 6 linhas com altura automática */
+    gap: 10px;
 }
 
 .card{
@@ -177,7 +262,7 @@ li:hover {
   justify-content: center;
   background-color: white;
   min-width: 300px;
-  height: 100%;
+  min-height: 300px;
   border-radius: 33px;
   transition: filter 0.3s ease;
 }
@@ -200,9 +285,11 @@ li:hover {
   background-color: white;
   font-weight: 700;
   cursor: pointer;
+  border-radius: 33px;
 }
 
 .mais{
+  font-weight: 600;
   color: black;
 }
 
