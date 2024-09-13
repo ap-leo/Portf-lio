@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   background: linear-gradient(129deg, #68B2F8 18.66%, #6D5FDB 42.21%, #7037CD 61.46%, #651F71 80.87%);
- scroll-behavior:smooth !important;
+  scroll-behavior: smooth !important;
 
 }
 
@@ -20,7 +20,7 @@ body {
 .trd,
 .frt,
 .fft {
-  
+
   display: flex;
   flex-direction: column;
   color: #FFF;
@@ -34,21 +34,24 @@ body {
   flex-direction: column;
 }
 
-.trd{
+.trd {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   height: 200vh;
 }
-.auxiliar{
+
+.auxiliar {
   display: flex;
   height: 90vh;
   justify-content: center;
-  position:sticky;
+  position: sticky;
   top: 0;
   flex-direction: column;
+  max-width: 50%;
 }
 
-.frt{
+.frt {
   background: black;
 }
 
@@ -58,7 +61,7 @@ body {
   align-items: center;
 }
 
-h1{
+h1 {
   font-family: 'Urbanist';
   font-size: 3em;
   font-weight: 800;
@@ -70,7 +73,8 @@ h1{
   font-weight: 600;
 }
 
-.first, .second {
+.first,
+.second {
   width: 100%;
   height: 200vh;
   display: flex;
@@ -81,7 +85,7 @@ h1{
 
 
 
-.fotos{
+.fotos {
   display: flex;
   align-items: center;
   padding: 2%;
@@ -93,47 +97,37 @@ h1{
   height: 100%;
 }
 
-.foto{
+.foto {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
+  height: 20%;
 }
 
-.foto:nth-of-type(1){
-  width: 100%;
-  height: 20%;
+.foto:nth-of-type(1) {
   background-image: url('imgs/leo.png');
 }
-.foto:nth-of-type(2){
-  width: 100%;
-  height: 20%;
+
+.foto:nth-of-type(2) {
   background-image: url('imgs/kamaleo.jpeg');
 }
 
-.foto:nth-of-type(3){
-  width: 100%;
-  height: 20%;
+.foto:nth-of-type(3) {
   background-image: url('imgs/apts.jpeg');
 }
 
-.foto:nth-of-type(4){
-  width: 100%;
-  height: 20%;
+.foto:nth-of-type(4) {
   background-image: url('imgs/sandy.jpeg');
 }
-.foto:nth-of-type(5){
-  width: 100%;
-  height: 20%;
+
+.foto:nth-of-type(5) {
   background-image: url('imgs/eg.jpeg');
 }
-.foto:nth-of-type(5){
-  width: 100%;
-  height: 20%;
+
+.foto:nth-of-type(5) {
   background-image: url('imgs/sofi.jfif');
 }
-
-
-
 
 .nome {
   display: flex;
@@ -170,7 +164,7 @@ h1{
   padding: 0;
 }
 
-li a{
+li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,22 +224,29 @@ li a:hover {
   cursor: pointer;
   transition: transform 0.2s ease;
 }
-.voltar:hover{
+
+.voltar:hover {
   transform: scale(1.2);
 }
+
 .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
-    grid-template-rows: repeat(6, auto);   /* 6 linhas ajustadas ao conteúdo */
-    gap: 100px; /* Espaçamento entre os cards */
-    width: 60%;
-    height: 100%;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
-    grid-template-rows: repeat(6, auto); /* 6 linhas com altura automática */
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 colunas de tamanho igual */
+  grid-template-rows: repeat(6, auto);
+  /* 6 linhas ajustadas ao conteúdo */
+  gap: 100px;
+  /* Espaçamento entre os cards */
+  height: 100%;
+  width: 60%;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 colunas de tamanho igual */
+  grid-template-rows: repeat(6, auto);
+  /* 6 linhas com altura automática */
+  gap: 10px;
 }
 
-.card{
+.card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,12 +261,12 @@ li a:hover {
   filter: brightness(0.7);
 }
 
-.card:hover .cardin{
+.card:hover .cardin {
   opacity: 1;
   filter: brightness(1);
 }
 
-.cardin{
+.cardin {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,41 +278,46 @@ li a:hover {
   border-radius: 33px;
 }
 
-.mais{
+.mais {
   font-weight: 600;
   color: black;
 }
 
-.cardin{
+.cardin {
   opacity: 0;
 }
 
-.card{
+.card {
   background-size: cover;
   background-position: center;
 }
 
-.card:nth-of-type(1){
+.card:nth-of-type(1) {
   background-image: url('imgs/insta.png');
 }
-.card:nth-of-type(2){
+
+.card:nth-of-type(2) {
   background-image: url('imgs/pitchd.png');
 }
-.card:nth-of-type(4){
+
+.card:nth-of-type(4) {
   background-image: url('imgs/pitchdd.png');
 }
-.card:nth-of-type(3){
+
+.card:nth-of-type(3) {
   background-image: url('imgs/labmeta.png');
 }
-.card:nth-of-type(5){
+
+.card:nth-of-type(5) {
   background-image: url('imgs/labgem.png');
 }
-.card:nth-of-type(6){
+
+.card:nth-of-type(6) {
   background-image: url('imgs/primavera.png');
 }
 
 
-.redes{
+.redes {
   display: flex;
   flex-direction: row;
   gap: 2vw;
@@ -319,7 +325,8 @@ li a:hover {
   min-height: 100px;
 }
 
-.in, .git{
+.in,
+.git {
   height: 100%;
   min-width: 100px;
   background-size: cover;
@@ -328,20 +335,20 @@ li a:hover {
   cursor: pointer;
 }
 
-.in{
+.in {
   background-image: url('imgs/in.png');
 }
 
-.git{
+.git {
   background-image: url('imgs/git.png');
 }
 
-.local{
+.local {
   display: flex;
   flex-direction: row;
 }
 
-.fft{
+.fft {
   display: none;
   align-items: center;
   justify-content: space-between;
@@ -349,11 +356,11 @@ li a:hover {
   background-image: none;
 }
 
-.topProj{
+.topProj {
   width: 100%;
 }
 
-.middleProj h1{
+.middleProj h1 {
   color: #FFF;
   font-family: 'Urbanist';
   font-size: 96px;
@@ -362,7 +369,7 @@ li a:hover {
   line-height: normal;
 }
 
-.middleProj h2{
+.middleProj h2 {
   color: #FFF;
   text-align: center;
   font-family: 'Montserrat';
@@ -372,7 +379,7 @@ li a:hover {
   line-height: normal;
 }
 
-.middleProj a{
+.middleProj a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -388,10 +395,80 @@ li a:hover {
 }
 
 
-.bottomProj{
+.bottomProj {
   width: 100%;
 }
 
-#inicio{
+#inicio {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+  .trd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 30%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 50%;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .auxiliar {
+    display: flex;
+    height: 10%;
+    justify-content: start;
+    position: static;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+
+  .card {
+    min-width: 150px;
+    min-height: 100px;
+  }
+
+  .trd h1 {
+    font-size: 15vw;
+  }
+
+  .sobremim {
+    width: 100%;
+    font-size: 3vw;
+  }
+
+  .first{
+    flex-direction: column;
+    height: 100vh;
+  }
+  .fotos{
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    position: relative;
+    overflow-x: scroll;
+  }
+  .nome{
+    width: 100%;
+    height: 90%;
+    position:static;
+    top: unset;
+  }
+
+  .foto {
+    min-width: 150px;
+    min-height: 100px;
+    width: unset;
+    height:unset;
+  }
 }
