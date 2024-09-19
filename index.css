@@ -8,7 +8,7 @@ body {
   margin: 0;
   background: linear-gradient(129deg, #68B2F8 18.66%, #6D5FDB 42.21%, #7037CD 61.46%, #651F71 80.87%);
   scroll-behavior: smooth !important;
-  overflow-x: hidden;
+  overflow-x: hidden
 
 }
 
@@ -36,10 +36,14 @@ body {
 }
 
 .trd {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 200vh;
+  width: 100vw;
+  transition: left 5s;
+  position: relative;
 }
 
 .auxiliar {
@@ -82,6 +86,11 @@ h1 {
   justify-content: space-between;
   flex-direction: row;
 }
+
+.second{
+  height: 300vh;
+}
+
 
 
 
@@ -204,7 +213,7 @@ li a:hover {
   padding: 2%;
   box-sizing: border-box;
   width: 100%;
-  height: 50%;
+  height: 33%;
   align-items: center;
   position: sticky;
   top: 0;
@@ -352,13 +361,21 @@ li a:hover {
 .fft {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   background-color: transparent;
   background-image: none;
+  width: 100vw;
 }
 
 .topProj {
   width: 100%;
+}
+
+.middleProj{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;;
 }
 
 .middleProj h1 {
@@ -406,8 +423,10 @@ li a:hover {
 
 .row{
   display: flex;
+  position: relative;
   flex-direction: row;
   width: 200vw;
+  -webkit-transition: all 0.5s ease-out;
 }
 
 @media only screen and (max-width: 750px) {
