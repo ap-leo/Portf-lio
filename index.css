@@ -8,8 +8,7 @@ body {
   margin: 0;
   background: linear-gradient(129deg, #68B2F8 18.66%, #6D5FDB 42.21%, #7037CD 61.46%, #651F71 80.87%);
   scroll-behavior: smooth !important;
-  overflow-x: hidden
-
+  overflow-x: hidden;
 }
 
 * {
@@ -40,7 +39,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 200vh;
+  height: 100%;
   width: 100vw;
   transition: left 5s;
   position: relative;
@@ -220,14 +219,18 @@ li a:hover {
   justify-content: space-around;
 }
 
-.sobremim {
+.sobremim, .sobremim2 {
   width: 80%;
   color: #FFF;
-  text-align: justify;
+  text-align: start;
   font-size: 2.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.sobremim2{
+  width: 100%;
 }
 
 .voltar {
@@ -241,19 +244,14 @@ li a:hover {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   /* 2 colunas de tamanho igual */
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: repeat(12, auto);
   /* 6 linhas ajustadas ao conteúdo */
-  gap: 100px;
+  gap: 30px;
   /* Espaçamento entre os cards */
   height: 100%;
-  width: 60%;
-  grid-template-columns: repeat(2, 1fr);
-  /* 2 colunas de tamanho igual */
-  grid-template-rows: repeat(6, auto);
-  /* 6 linhas com altura automática */
-  gap: 10px;
+  width: 30%;
 }
 
 .card {
@@ -264,16 +262,12 @@ li a:hover {
   min-width: 100px;
   min-height: 300px;
   border-radius: 33px;
-  transition: filter 0.3s ease;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
-  filter: brightness(0.7);
-}
-
-.card:hover .cardin {
-  opacity: 1;
-  filter: brightness(1);
+  transform: scale(1.1); 
 }
 
 .cardin {
@@ -326,6 +320,12 @@ li a:hover {
   background-image: url('imgs/primavera.png');
 }
 
+.descricao{
+  text-align: justify;
+
+  font-size: 0.8em;
+}
+
 
 .redes {
   display: flex;
@@ -360,11 +360,14 @@ li a:hover {
 
 .fft {
   display: flex;
-  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: start;
   justify-content: start;
-  background-color: transparent;
   background-image: none;
   width: 100vw;
+  right: 0;
+  background: transparent;
 }
 
 .topProj {
@@ -421,12 +424,13 @@ li a:hover {
   cursor: pointer;
 }
 
-.row{
+.linha{
   display: flex;
   position: relative;
   flex-direction: row;
+  height: auto;
   width: 200vw;
-  -webkit-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 750px) {
