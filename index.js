@@ -120,7 +120,7 @@ window.addEventListener('scroll', () => {
         setTimeout(() => {
             sumir.style.display = 'none';
             favs.style.display = 'flex';
-            favo.style.height = "100vh";
+            favs.style.height = "100vh";
 
             alreadyExecuted = true;
         }, 3000);
