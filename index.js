@@ -23,10 +23,8 @@ var site = document.querySelector('.site');
 
 cards.forEach((card) => {
     card.addEventListener("click", () => {
-
-        trd.style.height = "100vh"
         trd.style.right = "100vw"
-        coluna.style.display = "none"
+        trd.style.height="100vh"
 
         const classes = Array.from(card.classList);
 
@@ -35,6 +33,7 @@ cards.forEach((card) => {
                 fft.style.background = " var(--azule, linear-gradient(179deg, #3DBFC3 29.73%, rgba(106, 172, 174, 0.81) 89.4%))"
                 titulo.innerText = "InSTAUFPR"
                 sub.innerHTML = "<p class = 'descricao'>Atualmente trabalho no Insituto de Soluções Aplicadas da UFPR. Sou social media, mas sempre ajudo com site dos professores e eventos que todos do setor de tecnologia da UFPR querem criar. Fiz muitos amigos e conexões aqui, além de ter dado um jeito no site deles!</p>"
+                instagram.style.display="flex";
                 instagram.href = "https://www.instagram.com/insta.ufpr/"
                 site.href = "https://insta.ufpr.br/"
                 break;
@@ -70,6 +69,7 @@ cards.forEach((card) => {
                 fft.style.background = "linear-gradient(158deg, #218CEE 14.41%, #E7F5FF 114.33%)"
                 titulo.innerText = "Primavera em Ação 2024"
                 sub.innerHTML = "<p class = 'descricao'>Um projeto criado por duas professoras. Eu e Jun demos vida a ele, desde a linda logo feita pelo meu amigo, até a divulgação e desenvolvimento do projeto feita por mim</p>"
+                instagram.style.display="flex";
                 instagram.href="https://www.instagram.com/primaveraemacao_ufpr/"
                 site.href="https://insta.ufpr.br/primaveraemacao/"
                 break;
@@ -82,10 +82,8 @@ cards.forEach((card) => {
 })
 
 inicio.addEventListener("click", () => {
-    trd.style.height = "auto"
     trd.style.right = "0vw"
-    coluna.style.display = "grid"
-
+    trd.style.height="auto"
 })
 
 
@@ -93,9 +91,9 @@ window.addEventListener('scroll', () => {
     const distanciaParaMudar = window.innerHeight * 2.5;
 
     if (window.scrollY < distanciaParaMudar && window.scrollY < window.innerHeight * 4) {
-        texto.innerHTML = "Olá! Sou estudante de <strong>Ciência da Computação na UFPR</strong>. Comecei a me aventurar no <strong>design e programação</strong> em 2022, quando entrei no curso e no projeto de extenção Ciência para Todos (CPT).";
+        texto.innerHTML = "Olá! Sou estudante de <strong>Ciência da Computação na UFPR</strong>. Comecei a me aventurar no <strong>design</strong> e <strong>programação</strong> em 2022, quando entrei no curso e no projeto de extenção Ciência para Todos (CPT).";
     } else if (window.scrollY < window.innerHeight * 3.5) {
-        texto.innerHTML = "Sou um <strong>libriano de 22 anos</strong> que ama organizar e dar um 'tchan' em projetos, mas também ama passar tempo com amigos";
+        texto.innerHTML = "Sou um <strong>libriano</strong> de <strong>22 anos</strong> que ama organizar e dar um 'tchan' em projetos, mas também ama passar tempo com amigos.";
     } else {
         texto.innerHTML = "A maioria dos meus projetos foram voltados a eventos entre a <strong>comunidade interna e externa da UFPR</strong>, como você vai ver a seguir :)";
     }

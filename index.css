@@ -26,7 +26,7 @@ body {
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
   padding: 5%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   box-sizing: border-box;
   align-items: start;
@@ -39,16 +39,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100%;
+  height: auto;
   width: 100vw;
-  transition: left 5s;
   position: relative;
 }
 
 .trd2{
-  align-items: start;
-  position: sticky;
-  height: 150vh;
+  align-items: center;
+  height: 100vh;
 }
 
 .trd2 .auxiliar{
@@ -58,29 +56,28 @@ body {
 
 .favs{
   display: none;
-  position: sticky;
   align-items: center;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
-  height: 100vh;
-
+  height: 100%;
 }
 
 .musicas, .filmes{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
   width: 40%;
-  height: 100%;
+  height: 70%;
 }
+
 
 .mus, .fil{
   border-radius: 30px;
   border: 2px solid #FFF;
   width: 100%;
-  height: 80%;
+  height: 70%;
   min-width: 100px;
   min-height: 100px;
   background-size: cover;
@@ -127,6 +124,9 @@ body {
 .fil:nth-of-type(5){
   background-image: url('imgs/central.jpeg');
 }
+.fil:nth-of-type(6){
+  background-image: url('imgs/interstellar.jpeg');
+}
 .auxiliar {
   display: flex;
   height: 90vh;
@@ -135,6 +135,18 @@ body {
   top: 0;
   flex-direction: column;
   max-width: 50%;
+}
+
+.trd2{
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100vh;
+}
+
+.auxiliar2{
+  justify-content: center;
+  height: 100%;
 }
 
 .frt {
@@ -293,7 +305,7 @@ li a:hover {
   flex-direction: row;
   padding: 2%;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   height: 33%;
   align-items: center;
   position: sticky;
@@ -327,13 +339,11 @@ li a:hover {
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  /* 2 colunas de tamanho igual */
   grid-template-rows: repeat(12, auto);
-  /* 6 linhas ajustadas ao conteúdo */
   gap: 30px;
-  /* Espaçamento entre os cards */
   height: 100%;
   width: 30%;
+  margin: 0;
 }
 
 .card {
@@ -395,7 +405,7 @@ li a:hover {
 }
 
 .card:nth-of-type(5) {
-  background-image: url('imgs/labgem.png');
+  background-image: url('imgs/gbio.png');
 }
 
 .card:nth-of-type(6) {
@@ -408,8 +418,9 @@ li a:hover {
 }
 
 .descricao{
+  display: flex;
+  width: 100%;
   text-align: justify;
-
   font-size: 0.8em;
 }
 
@@ -462,6 +473,7 @@ li a:hover {
 
 .middleProj{
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   height: auto;
@@ -517,6 +529,7 @@ li a:hover {
   flex-direction: row;
   height: auto;
   width: 200vw;
+  right: 0;
   -webkit-transition: all 0.5s ease-in-out;
 }
 
