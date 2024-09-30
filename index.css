@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   background: linear-gradient(129deg, #68B2F8 18.66%, #6D5FDB 42.21%, #7037CD 61.46%, #651F71 80.87%);
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -45,6 +45,88 @@ body {
   position: relative;
 }
 
+.trd2{
+  align-items: start;
+  position: sticky;
+  height: 150vh;
+}
+
+.trd2 .auxiliar{
+  display: flex;
+  transition: opacity 3s ease;
+}
+
+.favs{
+  display: none;
+  position: sticky;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+
+}
+
+.musicas, .filmes{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  width: 40%;
+  height: 100%;
+}
+
+.mus, .fil{
+  border-radius: 30px;
+  border: 2px solid #FFF;
+  width: 100%;
+  height: 80%;
+  min-width: 100px;
+  min-height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 400ms ease;
+}
+
+.mus:hover, .fil:hover{
+  transform: scale(1.2);
+}
+
+.mus:nth-of-type(1){
+  background-image: url('imgs/fka.jpg');
+}
+.mus:nth-of-type(2){
+  background-image: url('imgs/mitski.jpeg');
+}
+.mus:nth-of-type(3){
+  background-image: url('imgs/mel.jpg');
+}
+.mus:nth-of-type(4){
+  background-image: url('imgs/marina.jpg');
+}
+.mus:nth-of-type(5){
+  background-image: url('imgs/grimes.jpg');
+}
+.mus:nth-of-type(6){
+  background-image: url('imgs/kali.jpg');
+}
+
+.fil:nth-of-type(1){
+  background-image: url('imgs/cisne.jpeg');
+}
+.fil:nth-of-type(2){
+  background-image: url('imgs/people.jpg');
+}
+.fil:nth-of-type(3){
+  background-image: url('imgs/castle.jpg');
+}
+.fil:nth-of-type(4){
+  background-image: url('imgs/monstros.jpg');
+}
+.fil:nth-of-type(5){
+  background-image: url('imgs/central.jpeg');
+}
 .auxiliar {
   display: flex;
   height: 90vh;
@@ -320,12 +402,16 @@ li a:hover {
   background-image: url('imgs/primavera.png');
 }
 
+#acesse{
+  border-radius: 33px;
+  border: white 1px solid;
+}
+
 .descricao{
   text-align: justify;
 
   font-size: 0.8em;
 }
-
 
 .redes {
   display: flex;
@@ -360,14 +446,14 @@ li a:hover {
 
 .fft {
   display: flex;
-  padding-top: 0;
-  padding-bottom: 0;
   align-items: start;
-  justify-content: start;
+  justify-content: space-around;
   background-image: none;
   width: 100vw;
   right: 0;
   background: transparent;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .topProj {
@@ -378,7 +464,7 @@ li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;;
+  height: auto;
 }
 
 .middleProj h1 {
@@ -418,6 +504,7 @@ li a:hover {
 
 .bottomProj {
   width: 100%;
+  height: auto;
 }
 
 #inicio {

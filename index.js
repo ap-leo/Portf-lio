@@ -1,14 +1,14 @@
 
-var insta = document.getElementById("projeto1")
-var inicio = document.getElementById("inicio")
-var trd = document.getElementById("linha")
-var pitch3 = document.getElementById("projeto2")
-var pitch4 = document.getElementById("projeto3")
-var labmeta = document.getElementById("projeto4")
-var primavera = document.getElementById("projeto5")
-var labgem = document.getElementById("projeto6")
-var cards = document.querySelectorAll(".mais")
-var texto = document.getElementById("sobremim")
+var insta = document.getElementById("projeto1");
+var inicio = document.getElementById("inicio");
+var trd = document.getElementById("linha");
+var pitch3 = document.getElementById("projeto2");
+var pitch4 = document.getElementById("projeto3");
+var labmeta = document.getElementById("projeto4");
+var primavera = document.getElementById("projeto5");
+var labgem = document.getElementById("projeto6");
+var cards = document.querySelectorAll(".mais");
+var texto = document.getElementById("sobremim");
 var cards = document.querySelectorAll(".card");
 
 var titulo = document.getElementById("titulo")
@@ -17,7 +17,8 @@ var acesse = document.getElementById("acesse")
 var fft = document.getElementById("fft");
 var coluna = document.getElementById("cards");
 
-
+var instagram = document.querySelector('.instagram');
+var site = document.querySelector('.site');
 
 
 cards.forEach((card) => {
@@ -34,37 +35,43 @@ cards.forEach((card) => {
                 fft.style.background = " var(--azule, linear-gradient(179deg, #3DBFC3 29.73%, rgba(106, 172, 174, 0.81) 89.4%))"
                 titulo.innerText = "InSTAUFPR"
                 sub.innerHTML = "<p class = 'descricao'>Atualmente trabalho no Insituto de Soluções Aplicadas da UFPR. Sou social media, mas sempre ajudo com site dos professores e eventos que todos do setor de tecnologia da UFPR querem criar. Fiz muitos amigos e conexões aqui, além de ter dado um jeito no site deles!</p>"
-                acesse.innerHTML = "<a href='google.com'>Acesse</a>"
+                instagram.href = "https://www.instagram.com/insta.ufpr/"
+                site.href = "https://insta.ufpr.br/"
                 break;
             case "card2":
                 fft.style.background = " linear-gradient(260deg, #5D009B -72.57%, #350059 -24.61%, #8C00EB 96.8%)"
-                titulo.innerText = "oi"
-                sub.innerHTML = "<p class = 'descricao'>Atualmente trabalho no Insituto de Soluções Aplicadas da UFPR. Sou social media, mas sempre ajudo com site dos professores e eventos que todos do setor de tecnologia da UFPR querem criar. Fiz muitos amigos e conexões aqui, além de ter dado um jeito no site deles!</p>"
-                acesse.innerHTML = "<a href='google.com'>Acesse</a>"
+                titulo.innerText = "PitchDay 2023"
+                sub.innerHTML = "<p class = 'descricao'>Meu primeiro projeto, tive o prazer de trabalhar com minha amiga Sofia Simões, que fez o design e me ensinou um milhão de coisas.<br>O Pitch aconteceu em parceria com a cervejaria Bodebrown, e foi um sucesso para startups e comunidade.</p>"
+                instagram.style.display="none";
+                site.href = "https://ap-leo.github.io/pitchday/"
                 break;
             case "card3":
                 fft.style.background = "black";
-                titulo.innerText = "oi"
-                sub.innerHTML = "<p class = 'descricao'>Atualmente trabalho no Insituto de Soluções Aplicadas da UFPR. Sou social media, mas sempre ajudo com site dos professores e eventos que todos do setor de tecnologia da UFPR querem criar. Fiz muitos amigos e conexões aqui, além de ter dado um jeito no site deles!</p>"
-                acesse.innerHTML = "<a href='google.com'>Acesse</a>"
+                titulo.innerText = "LabMeta"
+                sub.innerHTML = "<p class = 'descricao'>Eu e meu amigo Jun Sasaki estamos desenvolvendo o site para o Laboratório de Metaverso da UFPR. Ele conta um um código muito bom para manutenção sem necessidade de códigos extras!</p>"
+                instagram.style.display="none";
+                site.href="https://labmeta-web.github.io/site/"
                 break;
             case "card4":
                 fft.style.background = "linear-gradient(225deg, #F6971D 0.58%, #3DBFC3 74.43%)"
-                titulo.innerText = "oi"
-                sub.innerHTML = "<p class = 'descricao'>Atualmente trabalho no Insituto de Soluções Aplicadas da UFPR. Sou social media, mas sempre ajudo com site dos professores e eventos que todos do setor de tecnologia da UFPR querem criar. Fiz muitos amigos e conexões aqui, além de ter dado um jeito no site deles!</p>"
-                acesse.innerHTML = "<a href='google.com'>Acesse</a>"
+                titulo.innerText = "PitchDay 2024"
+                sub.innerHTML = "<p class = 'descricao'>Criei o design para o evento, mas infelizmente não foi aceito. Possui uma contagem regressiva muito interessante.</p>"
+                instagram.style.display="none";
+                site.href="https://ap-leo.github.io/pitch24k/"
                 break;
             case "card5":
                 fft.style.background = "var(--roxo, linear-gradient(180deg, #AF61C3 27.83%, #352339 114.35%))"
-                titulo.innerText = "oi"
-                sub.innerHTML = "<p class = 'descricao'>Atualmente trabalho no Insituto de Soluções Aplicadas da UFPR. Sou social media, mas sempre ajudo com site dos professores e eventos que todos do setor de tecnologia da UFPR querem criar. Fiz muitos amigos e conexões aqui, além de ter dado um jeito no site deles!</p>"
-                acesse.innerHTML = "<a href='google.com'>Acesse</a>"
+                titulo.innerText = "Gbio"
+                sub.innerHTML = "<p class = 'descricao'>Realizo a manutenção do site no padrão UFPR.</p>"
+                instagram.style.display="none";
+                site.href="https://demec.ufpr.br/gbio/"
                 break;
             case "card6":
                 fft.style.background = "linear-gradient(158deg, #218CEE 14.41%, #E7F5FF 114.33%)"
-                titulo.innerText = "oi"
-                sub.innerHTML = "<p class = 'descricao'>Atualmente trabalho no Insituto de Soluções Aplicadas da UFPR. Sou social media, mas sempre ajudo com site dos professores e eventos que todos do setor de tecnologia da UFPR querem criar. Fiz muitos amigos e conexões aqui, além de ter dado um jeito no site deles!</p>"
-                acesse.innerHTML = "<a href='google.com'>Acesse</a>"
+                titulo.innerText = "Primavera em Ação 2024"
+                sub.innerHTML = "<p class = 'descricao'>Um projeto criado por duas professoras. Eu e Jun demos vida a ele, desde a linda logo feita pelo meu amigo, até a divulgação e desenvolvimento do projeto feita por mim</p>"
+                instagram.href="https://www.instagram.com/primaveraemacao_ufpr/"
+                site.href="https://insta.ufpr.br/primaveraemacao/"
                 break;
             default:
                 console.log('Classe não reconhecida');
@@ -91,5 +98,33 @@ window.addEventListener('scroll', () => {
         texto.innerHTML = "Sou um <strong>libriano de 22 anos</strong> que ama organizar e dar um 'tchan' em projetos, mas também ama passar tempo com amigos";
     } else {
         texto.innerHTML = "A maioria dos meus projetos foram voltados a eventos entre a <strong>comunidade interna e externa da UFPR</strong>, como você vai ver a seguir :)";
+    }
+});
+
+const target = document.getElementById('meio');
+const sumir = document.getElementById('sumir');
+const favs = document.getElementById('favs');
+const favo = document.getElementById('favo');
+
+
+let alreadyExecuted = false;
+
+window.addEventListener('scroll', () => {
+    if (alreadyExecuted) return;
+
+    const rect = target.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
+
+    const isCenter = rect.top <= viewportHeight / 2 && rect.bottom >= viewportHeight / 2;
+
+    if (isCenter) {
+        sumir.style.opacity = '0';
+        setTimeout(() => {
+            sumir.style.display = 'none';
+            favs.style.display = 'flex';
+            favo.style.height = "100vh";
+
+            alreadyExecuted = true;
+        }, 3000);
     }
 });
